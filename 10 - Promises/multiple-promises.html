@@ -33,6 +33,7 @@
     .then(responses => {
       return Promise.all(responses.map(res => res.json()))
     })
+// chain promises
     .then(responses => {
       console.log(responses);
     });
